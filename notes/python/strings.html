@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Python Strings | NIL LABS</title>
+
+    <link rel="stylesheet"
+          href="../../style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="../../index.html"
+               class="logo">
+                NIL <span>LABS</span>
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="../../index.html#home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../../index.html#learn">
+                        Learn
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../../index.html#videos">
+                        Videos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../../index.html#notes">
+                        Notes
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Note -->
+
+    <main class="note-page">
+
+
+        <!-- Header -->
+
+        <div class="note-header">
+
+            <p class="section-label">
+                PYTHON
+            </p>
+
+            <h1>
+                Strings
+            </h1>
+
+            <p>
+                Learn how Python stores and works
+                with text.
+            </p>
+
+        </div>
+
+
+        <!-- What is a String -->
+
+        <section class="note-content-section">
+
+            <h2>
+                What is a String?
+            </h2>
+
+            <p>
+                A string is a sequence of characters
+                used to represent text in Python.
+            </p>
+
+            <p>
+                Strings can be written using single
+                quotes, double quotes or triple quotes.
+            </p>
+
+            <pre><code>name = "Nil"
+
+language = 'Python'
+
+message = """Hello
+Welcome to Python"""</code></pre>
+
+        </section>
+
+
+        <!-- Creating Strings -->
+
+        <section class="note-content-section">
+
+            <h2>
+                Creating a String
+            </h2>
+
+            <p>
+                You can create a string by assigning
+                text to a variable.
+            </p>
+
+            <pre><code>name = "Nil"
+
+print(name)</code></pre>
+
+        </section>
+
+
+        <!-- String Indexing -->
+
+        <section class="note-content-section">
+
+            <h2>
+                String Indexing
+            </h2>
+
+            <p>
+                Each character in a string has a position
+                called an index. Python starts indexing
+                from <strong>0</strong>.
+            </p>
+
+            <pre><code>text = "Python"
+
+print(text[0])
+print(text[1])
+print(text[5])</code></pre>
+
+            <p>
+                Output:
+            </p>
+
+            <pre><code>P
+y
+n</code></pre>
+
+        </section>
+
+
+        <!-- Negative Indexing -->
+
+        <section class="note-content-section">
+
+            <h2>
+                Negative Indexing
+            </h2>
+
+            <p>
+                Python also allows negative indexes.
+                <strong>-1</strong> refers to the last
+                character.
+            </p>
+
+            <pre><code>text = "Python"
+
+print(text[-1])
+print(text[-2])</code></pre>
+
+            <p>
+                Output:
+            </p>
+
+            <pre><code>n
+o</code></pre>
+
+        </section>
+
+
+        <!-- String Slicing -->
+
+        <section class="note-content-section">
+
+            <h2>
+                String Slicing
+            </h2>
+
+            <p>
+                Slicing allows you to extract a portion
+                of a string.
+            </p>
+
+            <pre><code>text = "Python"
+
+print(text[0:3])
+print(text[2:6])</code></pre>
+
+            <p>
+                Output:
+            </p>
+
+            <pre><code>Pyt
+thon</code></pre>
+
+        </section>
+
+
+        <!-- Useful Functions -->
+
+        <section class="note-content-section">
+
+            <h2>
+                Useful String Methods
+            </h2>
+
+            <p>
+                Python provides many useful methods
+                for working with strings.
+            </p>
+
+            <pre><code>text = "python programming"
+
+print(text.upper())
+print(text.lower())
+print(text.title())
+print(text.capitalize())</code></pre>
+
+        </section>
+
+
+        <!-- Finding Text -->
+
+        <section class="note-content-section">
+
+            <h2>
+                Finding Text
+            </h2>
+
+            <p>
+                The <strong>find()</strong> method can be
+                used to find the position of a substring.
+            </p>
+
+            <pre><code>text = "Python Programming"
+
+print(text.find("Python"))</code></pre>
+
+        </section>
+
+
+        <!-- Replacing -->
+
+        <section class="note-content-section">
+
+            <h2>
+                Replacing Text
+            </h2>
+
+            <p>
+                The <strong>replace()</strong> method
+                replaces part of a string with another
+                value.
+            </p>
+
+            <pre><code>text = "I like Java"
+
+text = text.replace("Java", "Python")
+
+print(text)</code></pre>
+
+        </section>
+
+
+        <!-- Important -->
+
+        <section class="note-content-section">
+
+            <h2>
+                Important Points
+            </h2>
+
+            <ul>
+
+                <li>
+                    Strings are sequences of characters.
+                </li>
+
+                <li>
+                    Python uses zero-based indexing.
+                </li>
+
+                <li>
+                    Strings support positive and
+                    negative indexing.
+                </li>
+
+                <li>
+                    Strings can be sliced.
+                </li>
+
+                <li>
+                    Python provides many built-in
+                    string methods.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- Practice -->
+
+        <section class="note-content-section">
+
+            <h2>
+                Practice
+            </h2>
+
+            <p>
+                Create a variable containing your name
+                and try to:
+            </p>
+
+            <ul>
+
+                <li>Print the first character.</li>
+
+                <li>Print the last character.</li>
+
+                <li>Convert the name to uppercase.</li>
+
+                <li>Convert the name to lowercase.</li>
+
+                <li>Find the length of the name.</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- Video -->
+
+        <section class="note-video">
+
+            <p class="section-label">
+                RELATED VIDEO
+            </p>
+
+            <h2>
+                Learn With My Video
+            </h2>
+
+            <p>
+                Watch my Python Day 2 video where
+                I learned strings and built-in functions.
+            </p>
+
+            <a
+                href="https://youtu.be/HYaeQKfzhhE"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+            >
+                Watch on YouTube →
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 NIL LABS — Learn • Build • Explore
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NIL LABS</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                NIL<span>LABS</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="menu-toggle"
+                onclick="toggleMenu()"
+                aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#learn">Learn</a>
+                </li>
+
+                <li>
+                    <a href="#videos">Videos</a>
+                </li>
+
+                <li>
+                    <a href="#notes">Notes</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+    <!-- Home -->
+    <main>
+
+        <section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="hero-label">
+            WELCOME TO NIL LABS
+        </p>
+
+        <h1>
+            LEARN.<br>
+            BUILD.<br>
+            <span>EXPLORE.</span>
+        </h1>
+
+        <p class="hero-description">
+            A personal learning platform where I document
+            my journey through coding, technology and
+            computer science.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#learn" class="button">
+                Start Learning
+            </a>
+
+            <a href="#projects" class="button secondary-button">
+                Explore Projects
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- Learning Section -->
+
+<section id="learn" class="learning-section">
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            KNOWLEDGE BASE
+        </p>
+
+        <h2>
+            What I'm Learning
+        </h2>
+
+        <p class="section-description">
+            Topics I'm currently studying, practicing and documenting
+            throughout my learning journey.
+        </p>
+
+    </div>
+
+
+    <div class="learning-grid">
+
+
+        <!-- Python -->
+
+        <article class="learning-card">
+
+            <div class="topic-number">
+                01
+            </div>
+
+            <div class="topic-content">
+
+                <h3>Python</h3>
+
+                <p>
+                    Learn programming fundamentals,
+                    problem solving and Python development.
+                </p>
+
+                <a href="#" class="topic-link">
+                    Explore Python →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Linux -->
+
+        <article class="learning-card">
+
+            <div class="topic-number">
+                02
+            </div>
+
+            <div class="topic-content">
+
+                <h3>Linux</h3>
+
+                <p>
+                    Learn Linux fundamentals, commands,
+                    systems and administration.
+                </p>
+
+                <a href="#" class="topic-link">
+                    Explore Linux →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Cybersecurity -->
+
+        <article class="learning-card">
+
+            <div class="topic-number">
+                03
+            </div>
+
+            <div class="topic-content">
+
+                <h3>Cybersecurity</h3>
+
+                <p>
+                    Explore cybersecurity concepts,
+                    networking and ethical security practices.
+                </p>
+
+                <a href="#" class="topic-link">
+                    Explore Security →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Web Development -->
+
+        <article class="learning-card">
+
+            <div class="topic-number">
+                04
+            </div>
+
+            <div class="topic-content">
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Build websites and learn HTML,
+                    CSS, JavaScript and modern web technologies.
+                </p>
+
+                <a href="#" class="topic-link">
+                    Explore Web →
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+<!-- Search Section -->
+
+<section class="search-section">
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search topics, notes..."
+        >
+
+        <button onclick="searchContent()">
+            Search
+        </button>
+
+    </div>
+
+    <p id="searchMessage"></p>
+
+</section>  
+
+
+        <!-- Videos Section -->
+
+<section id="videos" class="videos-section">
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            NIL LABS YOUTUBE
+        </p>
+
+        <h2>
+            Latest Videos
+        </h2>
+
+        <p class="section-description">
+            Videos documenting what I'm learning,
+            building and exploring.
+        </p>
+
+    </div>
+
+
+    <div class="video-grid">
+
+
+        <!-- Video 4 -->
+
+        <article class="video-card">
+
+            <div class="video-thumbnail">
+
+                <img
+                    src="https://img.youtube.com/vi/HYaeQKfzhhE/maxresdefault.jpg"
+                    alt="Python Day 2 - Strings"
+                >
+
+            </div>
+
+            <div class="video-info">
+
+                <p class="video-category">
+                    PYTHON • DAY 2
+                </p>
+
+                <h3>
+                    Python Day 2 — Strings
+                </h3>
+
+                <p>
+                    Learning Python strings, lists and
+                    useful built-in functions.
+                </p>
+
+                <a
+                    href="https://youtu.be/HYaeQKfzhhE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="watch-button"
+                >
+                    Watch on YouTube →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Video 3 -->
+
+        <article class="video-card">
+
+            <div class="video-thumbnail">
+
+                <img
+                    src="https://img.youtube.com/vi/8Nv9TiS2Gv4/maxresdefault.jpg"
+                    alt="Python Day 1 - If Elif Else"
+                >
+
+            </div>
+
+            <div class="video-info">
+
+                <p class="video-category">
+                    PYTHON • DAY 1
+                </p>
+
+                <h3>
+                    Python Day 1 — If, Elif & Else
+                </h3>
+
+                <p>
+                    Starting my Python learning journey
+                    with conditional statements.
+                </p>
+
+                <a
+                    href="https://youtu.be/8Nv9TiS2Gv4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="watch-button"
+                >
+                    Watch on YouTube →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Video 2 -->
+
+        <article class="video-card">
+
+            <div class="video-thumbnail">
+
+                <img
+                    src="https://img.youtube.com/vi/5OQzWDR0w4Y/maxresdefault.jpg"
+                    alt="My Learning Journey Begins"
+                >
+
+            </div>
+
+            <div class="video-info">
+
+                <p class="video-category">
+                    JOURNEY
+                </p>
+
+                <h3>
+                    My Learning Journey Begins
+                </h3>
+
+                <p>
+                    Python, projects, cybersecurity and
+                    the beginning of my learning journey.
+                </p>
+
+                <a
+                    href="https://youtu.be/5OQzWDR0w4Y"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="watch-button"
+                >
+                    Watch on YouTube →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Video 1 -->
+
+        <article class="video-card">
+
+            <div class="video-thumbnail">
+
+                <img
+                    src="https://img.youtube.com/vi/PSqXWvqxVqs/maxresdefault.jpg"
+                    alt="Why I Started Learning Computer Science"
+                >
+
+            </div>
+
+            <div class="video-info">
+
+                <p class="video-category">
+                    COMPUTER SCIENCE
+                </p>
+
+                <h3>
+                    Why I Started Learning Computer Science
+                </h3>
+
+                <p>
+                    Why I decided to start learning
+                    Computer Science in Class 11.
+                </p>
+
+                <a
+                    href="https://youtu.be/PSqXWvqxVqs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="watch-button"
+                >
+                    Watch on YouTube →
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>  
+
+
+        <!-- Notes & PDFs Section -->
+
+<section id="notes" class="notes-section">
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            NOTES & RESOURCES
+        </p>
+
+        <h2>
+            My Notes
+        </h2>
+
+        <p class="section-description">
+            Notes, summaries and study resources from
+            the topics I'm learning.
+        </p>
+
+    </div>
+
+
+    <div class="notes-grid">
+
+
+        <!-- Python Notes -->
+
+        <article class="note-card">
+
+            <div class="note-icon">
+                PY
+            </div>
+
+            <div class="note-content">
+
+                <p class="note-category">
+                    PYTHON
+                </p>
+
+                <h3>
+                    Python Basics
+                </h3>
+
+                <p>
+                    Notes covering Python fundamentals,
+                    conditions, strings, lists and functions.
+                </p>
+
+                <a href="notes/python/index.html"
+                   class="note-button">
+                    Explore Pyhton Notes →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Linux Notes -->
+
+        <article class="note-card">
+
+            <div class="note-icon">
+                LX
+            </div>
+
+            <div class="note-content">
+
+                <p class="note-category">
+                    LINUX
+                </p>
+
+                <h3>
+                    Linux Fundamentals
+                </h3>
+
+                <p>
+                    Commands, terminal basics and
+                    Linux concepts I'm learning.
+                </p>
+
+                <a href="#" class="note-button">
+                    View Notes →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Cybersecurity Notes -->
+
+        <article class="note-card">
+
+            <div class="note-icon">
+                CY
+            </div>
+
+            <div class="note-content">
+
+                <p class="note-category">
+                    CYBERSECURITY
+                </p>
+
+                <h3>
+                    Cybersecurity Notes
+                </h3>
+
+                <p>
+                    Concepts, networking fundamentals
+                    and ethical security learning.
+                </p>
+
+                <a href="#" class="note-button">
+                    View Notes →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Web Development Notes -->
+
+        <article class="note-card">
+
+            <div class="note-icon">
+                WD
+            </div>
+
+            <div class="note-content">
+
+                <p class="note-category">
+                    WEB DEVELOPMENT
+                </p>
+
+                <h3>
+                    Web Development
+                </h3>
+
+                <p>
+                    HTML, CSS, JavaScript and notes
+                    from building this website.
+                </p>
+
+                <a href="#" class="note-button">
+                    View Notes →
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+        <!-- Projects Section -->
+
+<section id="projects" class="projects-section">
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            WHAT I'M BUILDING
+        </p>
+
+        <h2>
+            Projects
+        </h2>
+
+        <p class="section-description">
+            Projects I'm building while learning and experimenting.
+        </p>
+
+    </div>
+
+    <div class="project-grid">
+
+        <div class="project-name-card">
+
+            <span class="project-number">01</span>
+
+            <div class="project-info">
+                <h3>SafeHear AI</h3>
+                <span class="coming-soon">
+                    COMING SOON
+                </span>
+            </div>
+
+        </div>
+
+
+        <div class="project-name-card">
+
+            <span class="project-number">02</span>
+
+            <div class="project-info">
+                <h3>Nil Jarvis</h3>
+                <span class="coming-soon">
+                    COMING SOON
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- About Section -->
+
+<section id="about" class="about-section">
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            ABOUT
+        </p>
+
+        <h2>
+            About NIL
+        </h2>
+
+    </div>
+
+    <div class="about-content">
+
+        <p>
+            I'm Nil, a student and coding enthusiast
+            learning computer science by building,
+            experimenting and documenting my journey.
+        </p>
+
+        <p>
+            This website is my personal learning space
+            where I share what I learn, the projects
+            I build and useful notes from my journey.
+        </p>
+
+    </div>
+
+</section>
+
+
+    <!-- Footer -->
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <h2>NIL LABS</h2>
+
+        <p>
+            Learn • Build • Explore
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#learn">Learning</a>
+            <a href="#videos">Videos</a>
+            <a href="#notes">Notes</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+
+        </div>
+
+        <p class="footer-copy">
+            © 2026 Nil Labs. Built while learning.
+        </p>
+
+    </div>
+
+</footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
