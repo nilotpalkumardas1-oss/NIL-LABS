@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Python Day 2 | Strings, Lists & Built-in Functions | Learning Python as a Beginner",
+        "youtubeId": "HYaeQKfzhhE",
+        "category": "Python",
+        "description": "Learning Python strings and built-in functions.",
+        "date": "2026-10-03"
+    },
+    {
+        "title": "I Started Learning Python | Day 1 — If, Elif & Else",
+        "youtubeId": "8Nv9TiS2Gv4",
+        "category": "Python",
+        "description": "Learning conditional statements in Python.",
+        "date": "2026-09-27"
+    },
+    {
+        "title": "My Learning Journey Begins | Python, Projects & Cybersecurity | Nil Labs #2026",
+        "youtubeId": "5OQzWDR0w4Y",
+        "category": "Learning Journey",
+        "description": "The beginning of my computer science learning journey.",
+        "date": "2026-09-26"
+    },
+    {
+        "title": "Why I Started Learning Computer Science in Class 11",
+        "youtubeId": "PSqXWvqxVqs",
+        "category": "Learning Journey",
+        "description": "Why I started learning computer science in Class 11.",
+        "date": "2026-09-25"
+    }
+]

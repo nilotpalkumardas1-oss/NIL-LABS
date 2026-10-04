@@ -1,0 +1,23 @@
+[
+    {
+        "title": "If, Elif & Else",
+        "category": "Python",
+        "description": "Learn how conditional statements work in Python.",
+        "file": "notes/python/if-elif-else.html",
+        "videoId": "8Nv9TiS2Gv4"
+    },
+    {
+        "title": "Strings",
+        "category": "Python",
+        "description": "Learn how to create, access and manipulate strings in Python.",
+        "file": "notes/python/strings.html",
+        "videoId": "HYaeQKfzhhE"
+    },
+    {
+        "title": "Built-in Functions",
+        "category": "Python",
+        "description": "Learn useful built-in functions available in Python.",
+        "file": "notes/python/built-in-functions.html",
+        "videoId": "HYaeQKfzhhE"
+    }
+]
