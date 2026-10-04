@@ -166,3 +166,98 @@ async function loadVideos() {
 // Load videos when page loads
 
 loadVideos();
+
+// =========================================
+// LOAD NOTES FROM JSON
+// =========================================
+
+async function loadNotes() {
+
+    const notesGrid = document.getElementById("notesGrid");
+
+    if (!notesGrid) {
+        return;
+    }
+
+    try {
+
+        const response = await fetch("data/notes.json");
+
+        if (!response.ok) {
+            throw new Error("Could not load notes.json");
+        }
+
+        const notes = await response.json();
+
+        notesGrid.innerHTML = "";
+
+        notes.forEach(note => {
+
+            const noteCard = document.createElement("article");
+
+            noteCard.className = "note-card";
+
+            noteCard.innerHTML = `
+
+                <div class="note-icon">
+                    PDF
+                </div>
+
+                <div class="note-content">
+
+                    <p class="note-category">
+                        ${note.category}
+                    </p>
+
+                    <h3>
+                        ${note.title}
+                    </h3>
+
+                    <p>
+                        ${note.description}
+                    </p>
+
+                <div class="note-actions">
+
+                    <a
+                      href="${note.file}"
+                      class="note-button">
+                      Read Note →
+                    </a>
+
+                    <a
+                      href="https://youtu.be/${note.videoId}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="note-button">
+                      Watch Video →
+                    </a>
+
+                s</div>
+
+                </div>
+
+            `;
+
+            notesGrid.appendChild(noteCard);
+
+        });
+
+    } catch (error) {
+
+        console.error("Error loading notes:", error);
+
+        notesGrid.innerHTML = `
+            <p>
+                Unable to load notes.
+            </p>
+        `;
+
+    }
+
+}
+
+
+// Load notes when page loads
+
+loadNotes();
