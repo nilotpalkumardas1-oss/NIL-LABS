@@ -1,3 +1,7 @@
+// =========================================
+// SEARCH
+// =========================================
+
 function searchContent() {
 
     const input = document
@@ -43,7 +47,7 @@ function searchContent() {
         },
 
         {
-            keywords: ["nil jarvis", "nil jarvis", "jarvis", "jar"],
+            keywords: ["nil jarvis", "jarvis", "jar"],
             link: "#projects"
         }
 
@@ -66,7 +70,13 @@ function searchContent() {
             "No matching content found.";
 
     }
+
 }
+
+
+// =========================================
+// MOBILE MENU
+// =========================================
 
 function toggleMenu() {
 
@@ -75,6 +85,7 @@ function toggleMenu() {
     navLinks.classList.toggle("active");
 
 }
+
 
 // =========================================
 // LOAD VIDEOS FROM JSON
@@ -163,39 +174,40 @@ async function loadVideos() {
 }
 
 
-// Load videos when page loads
-
-loadVideos();
-
 // =========================================
 // LOAD NOTES FROM JSON
 // =========================================
 
 async function loadNotes() {
 
-    const notesGrid = document.getElementById("notesGrid");
+    const notesContainer =
+        document.getElementById("notes-container");
 
-    if (!notesGrid) {
+    if (!notesContainer) {
         return;
     }
 
     try {
 
-        const response = await fetch("data/notes.json");
+        const response =
+            await fetch("data/notes.json");
 
         if (!response.ok) {
             throw new Error("Could not load notes.json");
         }
 
-        const notes = await response.json();
+        const notes =
+            await response.json();
 
-        notesGrid.innerHTML = "";
+        notesContainer.innerHTML = "";
 
         notes.forEach(note => {
 
-            const noteCard = document.createElement("article");
+            const noteCard =
+                document.createElement("article");
 
-            noteCard.className = "note-card";
+            noteCard.className =
+                "note-card";
 
             noteCard.innerHTML = `
 
@@ -217,29 +229,33 @@ async function loadNotes() {
                         ${note.description}
                     </p>
 
-                <div class="note-actions">
+                    <div class="note-actions">
 
-                    <a
-                      href="${note.file}"
-                      class="note-button">
-                      Read Note →
-                    </a>
+                        <a
+                            href="${note.file}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="note-button"
+                        >
+                            Read Note →
+                        </a>
 
-                    <a
-                      href="https://youtu.be/${note.videoId}"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="note-button">
-                      Watch Video →
-                    </a>
+                        <a
+                            href="https://youtu.be/${note.videoId}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="note-button"
+                        >
+                            Watch Video →
+                        </a>
 
-                s</div>
+                    </div>
 
                 </div>
 
             `;
 
-            notesGrid.appendChild(noteCard);
+            notesContainer.appendChild(noteCard);
 
         });
 
@@ -247,7 +263,7 @@ async function loadNotes() {
 
         console.error("Error loading notes:", error);
 
-        notesGrid.innerHTML = `
+        notesContainer.innerHTML = `
             <p>
                 Unable to load notes.
             </p>
@@ -258,6 +274,9 @@ async function loadNotes() {
 }
 
 
-// Load notes when page loads
+// =========================================
+// LOAD CONTENT WHEN PAGE LOADS
+// =========================================
 
+loadVideos();
 loadNotes();
