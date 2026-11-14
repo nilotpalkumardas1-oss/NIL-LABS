@@ -23,7 +23,7 @@ function searchContent() {
 
         {
             keywords: ["python", "pyth"],
-            link: "notes/python/index.html"
+            link: "#notes"
         },
 
         {
@@ -87,9 +87,10 @@ function toggleMenu() {
 }
 
 
-// =========================================
-// LOAD VIDEOS FROM JSON
-// =========================================
+
+ // =========================================
+ // LOAD VIDEOS FROM JSON
+ // =========================================
 
 async function loadVideos() {
 
@@ -173,7 +174,6 @@ async function loadVideos() {
 
 }
 
-
 // =========================================
 // LOAD NOTES FROM JSON
 // =========================================
@@ -240,14 +240,27 @@ async function loadNotes() {
                             Read Note →
                         </a>
 
-                        <a
-                            href="https://youtu.be/${note.videoId}"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="note-button"
-                        >
-                            Watch Video →
-                        </a>
+                        ${note.videoId ? `
+                            <a
+                                href="https://youtu.be/${note.videoId}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="note-button"
+                            >
+                                Watch Video →
+                            </a>
+                        ` : ""}
+
+                        ${note.playlistUrl ? `
+                            <a
+                                href="${note.playlistUrl}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="note-button"
+                            >
+                                Watch Playlist →
+                            </a>
+                        ` : ""}
 
                     </div>
 

@@ -19,5 +19,12 @@
     "description": "Learn useful Python built-in functions with simple examples and explanations.",
     "file": "notes/python/built-in-functions.pdf",
     "videoId": "HYaeQKfzhhE"
+  },
+  {
+    "title": "100 Days of Python — Complete Study Book",
+    "category": "Python",
+    "description": "Complete 100-day Python study book with explanations, code examples, outputs and practice tasks.",
+    "file": "notes/python/100-days-python-complete.pdf",
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLXo5ZS0KEZZ0"
   }
-]   
+]
